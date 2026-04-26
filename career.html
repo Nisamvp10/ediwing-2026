@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gramentheme">
+    <meta name="description" content="Brevon - Multipurpose Business HTML Template">
+    <!-- ======== Page title ============ -->
+    <title>Eduwing-Career</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--<< Dark Mode.css >>-->
+    <link rel="stylesheet" href="assets/css/dark-mode.css">
+    <!--<< RTL.css >>-->
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <link rel="stylesheet" href="assets/css/custom-main.css">
+    <style>
+        .swiper-dot .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            transition: 0.6s;
+            background-color: #f3f8ff;
+            opacity: 1;
+            border-radius: 10px;
+        }
+
+        .swiper-dot {
+            position: relative;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div id="preloader" class="preloader">
+            <div class="animation-preloader">
+                <div class="spinner">
+                </div>
+                <div class="txt-loading">
+                    <img src="assets/img/home-main/logo-dark.png">
+                </div>
+                <!-- <p class="text-center">Loading</p> -->
+            </div>
+            <div class="loader">
+                <div class="row">
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-left">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                    <div class="col-3 loader-section section-right">
+                        <div class="bg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Back To Top Start -->
+        <button id="back-top" class="back-to-top">
+            <i class="fa-regular fa-arrow-up"></i>
+        </button>
+
+        <!-- GT MouseCursor Start -->
+        <div class="mouseCursor cursor-outer"></div>
+        <div class="mouseCursor cursor-inner"></div>
+
+        <!-- Offcanvas Area Start -->
+        <div class="fix-area">
+            <div class="offcanvas__info">
+                <div class="offcanvas__wrapper">
+                    <div class="offcanvas__content">
+                        <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                            <div class="offcanvas__logo">
+                                <a href="index.html">
+                                    <img src="assets/img/home-main/logo-dark.png" alt="logo-img">
+                                </a>
+                            </div>
+                            <div class="offcanvas__close">
+                                <button>
+                                    <i class="fas fa-times"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="mobile-menu fix mb-3"></div>
+                        <div class="offcanvas__contact">
+                            <h4>Contact Info</h4>
+                            <ul>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon">
+                                        <i class="fal fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Office No: M1 Sultan Business Centre, Al Wasal
+                                            Building Oud Metha - Dubai UAE</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-envelope"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="mailto:info@example.com"><span
+                                                class="mailto:info@eduwing.ae">info@eduwing.ae</span></a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="fal fa-clock"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="offcanvas__contact-icon mr-15">
+                                        <i class="far fa-phone"></i>
+                                    </div>
+                                    <div class="offcanvas__contact-text">
+                                        <a href="tel:+971525252704">+971 52 52 52 704</a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="social-icon d-flex align-items-center">
+                                <a href="#"><iconify-icon icon="bxl:facebook"></iconify-icon></a>
+                                <a href="#"><iconify-icon icon="bxl:instagram"></iconify-icon></a>
+                                <a href="#"><iconify-icon icon="ri:twitter-x-fill"></iconify-icon></a>
+                                <a href="#"><iconify-icon icon="bxl:linkedin"></iconify-icon></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas__overlay"></div>
+
+        <!-- Header Section Start -->
+        <header id="header-sticky" class="header-1">
+            <div class="container padding-30">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <a href="index.html" class="logo">
+                            <img src="assets/img/home-main/logo-main.png" alt="img">
+                        </a>
+                        <div class="mean__menu-wrapper">
+                            <div class="main-menu">
+                                <nav id="mobile-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="index.html">
+                                                Home
+                                            </a>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="about.html">
+                                                About Us
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="teams.html">Our Team</a></li>
+                                                <li><a href="attestation.html">Attestation</a></li>
+                                                <li><a href="gallery.html">Gallery</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="programmes.html">
+                                                Programmes
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </a>
+                                            <ul class="submenu">
+                                                <li><a href="admission-policy.html">Admission Policy</a></li>
+                                                <li><a href="registration-process.html">Registration Process</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="academic-partners.html">
+                                                Academic Partner’s
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="credit-transfer.html">
+                                                Credit Transfer
+                                            </a>
+
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+
+                            <a href="contact.html" class="header-btn">
+                                <span><img src="assets/img/icons/headset.svg"> Let’s talk</span>
+
+                            </a>
+                            <div class="header__hamburger d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fa-regular fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div id="smooth-wrapper">
+            <div id="smooth-content">
+
+                <!-- Breadcrumb Section Start -->
+                <div class="breadcrumb-wrapper bg-cover-2"
+                    style="background-image: url('assets/img/career/career-breadcrumb.webp');">
+                    <div class="container">
+                        <div class="page-heading">
+                            <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                                <li>
+                                    <a href="index.html">
+                                        <img src="assets/img/icons/banner-title.svg"> Home
+                                    </a>
+                                </li>
+                                <li>
+                                    /
+                                </li>
+                                <li>
+                                    Career
+                                </li>
+                            </ul>
+                            <div class="breadcrumb-sub-title">
+                                <h1 class="text-white wow fadeInUp" data-wow-delay=".3s">Eduwing Education Helping
+                                    Professionals Build Better Futures.</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="section-padding bg-offwhite benefits-bg-img">
+                    <div class="container">
+                        <div class="row">
+                            <div class="section-title text-center benefits-container">
+                                <h6 class="sub-title wow fadeInUp">
+                                    <img src="assets/img/title-shape.svg" alt="img">Careers at Eduwing Education
+                                </h6>
+                                <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim width-50 margin-auto">
+                                    Grow Your Career in an <strong>Environment<span> That Values Vision and
+                                            Impact.</span></strong>
+                                </h2>
+                                <p>At Eduwing Education, we believe that our people are the driving force behind our
+                                    success. We are always looking for passionate, responsible, and growth-oriented
+                                    professionals who want to build a rewarding career in the education sector while
+                                    helping students achieve their academic and professional goals. If you are
+                                    enthusiastic about education and committed to making a difference, <strong>Eduwing
+                                        Education is the right place for you.</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- Career Section Start -->
+                <section class="feature-section section-padding fix">
+                    <div class="container">
+                        <div class="section-title-area">
+                            <div class="section-title text-left">
+                                <h6 class="sub-title wow fadeInUp">
+                                    <img src="assets/img/title-shape.svg" alt="img"> Current Openings
+                                </h6>
+                                <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
+                                    Explore Opportunities <strong><span>That Shape Futures</span></strong>
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="career-main-container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature-box-items">
+                                        <div class="career-content-container">
+                                            <h6>001.</h6>
+                                            <h3>
+                                                <a href="#">Student Counsellor</span></a>
+                                            </h3>
+                                            <p>
+                                                Support prospective students in choosing the right academic programs and
+                                                guide them through the admission process.
+                                            </p>
+                                        </div>
+
+                                        <div class="btn-sec">
+                                            <a class="gt-theme-btn-main" href="student-counsellor-inner.html"
+                                                style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                                                <span class="gt-theme-btn-arrow-left"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                                <span class="gt-theme-btn">Apply Now</span>
+                                                <span class="gt-theme-btn-arrow-right"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature-box-items">
+                                        <div class="career-content-container">
+                                            <h6>002.</h6>
+                                            <h3>
+                                                <a href="#"> Student Affairs Executive</span></a>
+                                            </h3>
+                                            <p>
+                                                Provide assistance to enrolled students with academic coordination,
+                                                documentation, and overall student support.
+                                            </p>
+                                        </div>
+
+                                        <div class="btn-sec">
+                                            <a class="gt-theme-btn-main" href="student-affairs-executive.html"
+                                                style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                                                <span class="gt-theme-btn-arrow-left"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                                <span class="gt-theme-btn">Apply Now</span>
+                                                <span class="gt-theme-btn-arrow-right"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature-box-items">
+                                        <div class="career-content-container">
+                                            <h6>003.</h6>
+                                            <h3>
+                                                <a href="#">Human Resource Executive</span></a>
+                                            </h3>
+                                            <p>
+                                                Handle recruitment, employee onboarding, staff records, and support
+                                                daily HR operations.
+                                            </p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a class="gt-theme-btn-main" href="human-resource-executive.html"
+                                                style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                                                <span class="gt-theme-btn-arrow-left"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                                <span class="gt-theme-btn">Apply Now</span>
+                                                <span class="gt-theme-btn-arrow-right"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature-box-items">
+                                        <div class="career-content-container">
+                                            <h6>004.</h6>
+                                            <h3>
+                                                <a href="#">Branch Head (Manager)</span></a>
+                                            </h3>
+                                            <p>
+                                                Lead branch operations, manage team performance, and ensure service
+                                                quality and business growth.
+                                            </p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a class="gt-theme-btn-main" href="branch-head.html"
+                                                style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                                                <span class="gt-theme-btn-arrow-left"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                                <span class="gt-theme-btn">Apply Now</span>
+                                                <span class="gt-theme-btn-arrow-right"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature-box-items">
+                                        <div class="career-content-container">
+                                            <h6>005.</h6>
+                                            <h3>
+                                                <a href="#">Zonal Manager</span></a>
+                                            </h3>
+                                            <p>
+                                                Oversee multiple branches within a region and ensure smooth operations
+                                                and effective team management.
+                                            </p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a class="gt-theme-btn-main" href="zonal-manager.html"
+                                                style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                                                <span class="gt-theme-btn-arrow-left"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                                <span class="gt-theme-btn">Apply Now</span>
+                                                <span class="gt-theme-btn-arrow-right"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6">
+                                    <div class="feature-box-items">
+                                        <div class="career-content-container">
+                                            <h6>006.</h6>
+                                            <h3>
+                                                <a href="#">Digital Marketing Team</span></a>
+                                            </h3>
+                                            <p>
+                                                Manage social media platforms, online campaigns, website updates, and
+                                                digital lead generation activities.
+                                            </p>
+                                        </div>
+                                        <div class="btn-sec">
+                                            <a class="gt-theme-btn-main" href="digital-marketing-team.html"
+                                                style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+                                                <span class="gt-theme-btn-arrow-left"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                                <span class="gt-theme-btn">Apply Now</span>
+                                                <span class="gt-theme-btn-arrow-right"> <i
+                                                        class="fa-solid fa-arrow-up-right"></i> </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section-padding">
+                    <div class="container bg-2">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 display-flex-2">
+                                <div class="section-title text-left">
+                                    <h2 class="tx-title sec_title tz-itm-title tz-itm-anim">
+                                       Join Our Team<br>Ready to take the next step in your career? <strong><span> Interested candidates
+                                                are invited to send their updated</span></strong>
+                                    </h2>
+                                    <h4>Join Eduwing Education and become part of a growing organization dedicated to
+                                        helping professionals achieve their academic and career aspirations. </h4>
+                                </div>
+                                <a class="gt-theme-btn-main style-2" data-wow-delay=".5s" href="mailto:hr@eduwing.ae">
+                                    <span class="gt-theme-btn-arrow-left"> <i class="fa-solid fa-envelope"></i>
+                                    </span>
+                                    <span style="text-transform: math-auto;" class="gt-theme-btn">Resume to: hr@eduwing.ae</span>
+                                    <span class="gt-theme-btn-arrow-right"> <i class="fa-solid fa-envelope"></i> </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+                <!-- Footer Section Start -->
+                <footer class="footer-section">
+                    <div class="footer-area">
+                        <div class="container-fluid">
+                            <div class="footer-widget-wrapper">
+                                <div class="row justify-content-between">
+                                    <div class="col-xl-3 col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                                        <div class="footer-widget-items">
+                                            <div class="widget-head">
+                                                <a href="index.html" class="footer-logo">
+                                                    <img src="assets/img/home-main/logo-main.png" alt="img">
+                                                </a>
+                                            </div>
+                                            <div class="footer-content">
+                                                <p>
+                                                    Eduwing offers an excellent option for students to learn from one of
+                                                    the best and top universities in the world.
+                                                </p>
+                                                <div class="social-media">
+                                                    <ul>
+                                                        <a target="_blank" href="https://www.facebook.com/eduwing.ae">
+                                                            <li>
+                                                                <iconify-icon icon="bxl:facebook"></iconify-icon>
+                                                            </li>
+                                                        </a>
+                                                        <a target="_blank"
+                                                            href="https://www.instagram.com/eduwing.education/">
+                                                            <li>
+                                                                <iconify-icon icon="bxl:instagram"></iconify-icon>
+                                                            </li>
+                                                        </a>
+                                                        <a target="_blank" href="https://x.com/eduwinguae">
+                                                            <li>
+                                                                <iconify-icon icon="ri:twitter-x-fill"></iconify-icon>
+                                                            </li>
+                                                        </a>
+
+                                                        <a target="_blank"
+                                                            href="https://www.linkedin.com/company/eduwing-education/">
+                                                            <li>
+                                                                <iconify-icon icon="bxl:linkedin"></iconify-icon>
+                                                            </li>
+                                                        </a>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                                        <div class="footer-widget-items footer-menu">
+                                            <div class="widget-head">
+                                                <h3>Useful Links</h3>
+                                            </div>
+                                            <ul class="gt-list-area">
+                                                <li>
+                                                    <a href="index.html">
+                                                        Home
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="career.html">
+                                                        Careers
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="blog.html">
+                                                        Blog
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="contact.html">
+                                                        Contact Us
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 ps-lg-0 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                                        <div class="footer-widget-items footer-menu">
+                                            <div class="widget-head">
+                                                <h3>Quick links</h3>
+                                            </div>
+                                            <ul class="gt-list-area">
+                                                <li>
+                                                    <a href="programmes.html">
+                                                        Diploma Courses
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="programmes.html">
+                                                        UG Courses
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="programmes.html">
+                                                        PG Courses
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="programmes.html">
+                                                        PHD Programes
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                                       <div class="footer-widget-items footer-menu">
+                                            <div class="widget-head">
+                                                <h3>Phone</h3>
+                                            </div>
+                                            <ul class="gt-list-area">
+                                                <li>
+                                                    <img src="assets/img/home-main/country-1.svg"> +971 52 52 52 704
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/home-main/country-2.svg"> +1 33 22 639 776
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/home-main/country-3.svg"> +91 800 800 55 38
+                                                </li>
+                                                <li>
+                                                    <img src="assets/img/home-main/country-4.svg"> +974 71 76 147
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-7 col-md-12 wow fadeInUp" data-wow-delay=".8s">
+                                        <div class="footer-widget-items">
+                                            <div class="widget-head">
+                                                <h3>Our Office Locations</h3>
+                                            </div>
+                                            <ul class="contact-list footer-address">
+                                                <li>
+                                                    UAE - Dubai
+                                                </li>
+                                                <li>
+                                                    Sharjah
+                                                </li>
+                                                <li>
+                                                    Abu Dhabi
+                                                </li>
+                                                <li>
+                                                    Qatar - Doha
+                                                </li>
+                                                <li>
+                                                    India - Kerala
+                                                </li>
+                                                <li>
+                                                    Tamil Nadu
+                                                </li>
+                                                <li>
+                                                    Karnataka
+                                                </li>
+                                                <!-- <li>
+                                                    <span> M / </span> info@eduwing.ae | info@e-learning.ae
+                                                </li> -->
+                                            </ul>
+                                            <ul class="contact-list-address">
+                                                <li>
+                                                    M / info@eduwing.ae | info@e-learning.ae
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <div class="container-fluid">
+                                <div class="footer-bottom-wrapper">
+                                    <p class="wow fadeInUp" data-wow-delay=".3s">
+                                        © 2025 <b>Eduwing</b> All rights reserved.
+                                    </p>
+
+                                    <ul class="footer-list wow fadeInUp" data-wow-delay=".7s">
+                                        <li>
+                                            <a href="privacy-policy.html">Privacy policy</a>
+                                        </li>
+                                        <!-- <li>।</li>
+                                        <li>
+                                            <a href="#">Terms & conditions</a>
+                                        </li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="call-buton clbtn-show"><a class="cc-calto-action-ripple" href="tel:+971556410900">
+            <img class="img-circle" src="assets/img/call.jpeg" alt="Best smart phone service center in tirur"
+                width="100%" title="Best smart phone service center in tirur">
+        </a></div>
+
+
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Gsap Min Js >>-->
+    <script src="assets/js/gsap.min.js"></script>
+    <!--<< ScrollTrigger Min Js >>-->
+    <script src="assets/js/ScrollTrigger.min.js"></script>
+    <!--<< ScrollSmoother Min Js >>-->
+    <script src="assets/js/ScrollSmoother.min.js"></script>
+    <!--<< ScrollToPlugin Min Js >>-->
+    <script src="assets/js/ScrollToPlugin.min.js"></script>
+    <!--<< SplitText Min Js >>-->
+    <script src="assets/js/SplitText.min.js"></script>
+    <!--<< TextPlugin Min Js >>-->
+    <script src="assets/js/TextPlugin.js"></script>
+    <!--<< Chroma Min Js >>-->
+    <script src="assets/js/chroma.min.js"></script>
+    <!--<< nice-selec Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Parallaxie Js >>-->
+    <script src="assets/js/parallaxie.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/custom.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
+
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js'></script> -->
+    <script>
+        $(function () {
+            $('.usa-tooltip').tooltip({
+                html: true,
+                title: `
+        <div class="title-container">
+            <img src="assets/img/icons/usa.svg" alt="USA Flag">
+          <div class="tooltip-title">USA</div>
+            </div
+          
+          <div class="tooltip-phone">
+            <i class="fas fa-headset"></i>
+            <span>+1 33 22 639 776</span>
+          </div>
+        `
+            });
+        });
+
+        $(function () {
+            $('.india-tooltip').tooltip({
+                html: true,
+                title: `
+        <div class="title-container">
+            <img src="assets/img/icons/india.svg" alt="USA Flag">
+          <div class="tooltip-title">INDIA</div>
+            </div
+          
+          <div class="tooltip-phone">
+            <i class="fas fa-headset"></i>
+            <span>+91 800 800 55 38</span>
+          </div>
+        `
+            });
+        });
+
+
+        $(function () {
+            $('.uae-tooltip').tooltip({
+                html: true,
+                title: `
+        <div class="title-container">
+            <img src="assets/img/icons/uae.svg" alt="USA Flag">
+          <div class="tooltip-title">UAE</div>
+            </div
+          
+          <div class="tooltip-phone">
+            <i class="fas fa-headset"></i>
+            <span>+971 52 52 52 704</span>
+          </div>
+        `
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
