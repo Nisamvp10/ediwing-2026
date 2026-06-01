@@ -35,7 +35,7 @@
     <link rel="stylesheet" href="assets/css/rtl.css">
     <link rel="stylesheet" href="assets/css/custom-main.css">
     <!-- GLightbox CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/css/gligthbox.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -201,7 +201,7 @@
                                             </a>
 
                                         </li>
-                                         <li>
+                                        <li>
                                             <a href="contact.html">
                                                 Contact Us
                                             </a>
@@ -629,6 +629,64 @@
                                             </li>
 
 
+                                            <li class="accordion block wow fadeInUp" data-wow-delay=".4s">
+                                                <div class="acc-btn">
+                                                    <div class="location-header">
+                                                        <img src="assets/img/home-main/country-3.svg">
+                                                        <h3>INDIA - GUDALLUR</h3>
+                                                    </div>
+                                                    <div class="icon fa-solid fa-angle-down"></div>
+                                                </div>
+                                                <div class="acc-content credit-transfer-course">
+                                                    <div class="content">
+                                                        <div class="contact-information">
+                                                            <ul>
+                                                                <li>
+                                                                    <div class="icon"><iconify-icon
+                                                                            icon="mdi-light:email"></iconify-icon></div>
+                                                                    <h4>credittransfer@eduwing.ae, info@eduwing.ae</h4>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="icon"><iconify-icon
+                                                                            icon="fluent:call-28-regular"></iconify-icon>
+                                                                    </div>
+                                                                    <h4>+91 8008004453</h4>
+                                                                </li>
+                                                                <li class="map-container">
+                                                                    <a target="new"
+                                                                        href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d156037.0575720853!2d75.7518184!3d11.2500023!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba659e3b6c6bd19%3A0x879abca384452939!2sEDUWING%20EDUCATION%20CALICUT!5e1!3m2!1sen!2sin!4v1771056665948!5m2!1sen!2sin">
+                                                                        <div class="icon"><iconify-icon
+                                                                                icon="prime:map-marker"></iconify-icon>
+                                                                        </div>
+                                                                        <h4>Eduwing Education,
+                                                                            1st floor,
+                                                                            Next to Udupi Restaurant,
+                                                                            Rajagopalapuram, Ooty Road
+                                                                            Gudalur,The Nilgiris(Dist)
+                                                                            Tamil Nadu
+                                                                            Pin 643211</h4>
+                                                                    </a>
+                                                                    <div class="location-map">
+                                                                        <iframe
+                                                                            src=" https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4871.923321772101!2d76.49319919999999!3d11.4974709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8a712fc191f1b%3A0xa3087a564f241637!2sEDUWING%20EDUCATION!5e1!3m2!1sen!2sin!4v1780132786026!5m2!1sen!2sin"
+                                                                            style="border:0;" allowfullscreen=""
+                                                                            loading="lazy"
+                                                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="icon"><iconify-icon
+                                                                            icon="material-symbols-light:nest-clock-farsight-analog-outline"></iconify-icon>
+                                                                    </div>
+                                                                    <h4>9:00am - 6:00pm</h4>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+
+
 
                                             <li class="accordion block wow fadeInUp" data-wow-delay=".4s">
                                                 <div class="acc-btn">
@@ -696,71 +754,57 @@
                                                 </h2>
                                             </h6>
                                         </div>
-                                        <form action="contact.php" id="contact-form" class="contact-form-box">
+                                        <form action="contact.php" method="post" id="contact-form"
+                                            class="contact-form-box">
+
                                             <div class="row g-4 align-items-center">
-                                                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+
+                                                <div class="col-lg-6 col-md-6">
                                                     <div class="form-clt">
-                                                        <input type="text" placeholder="Full name *">
+                                                        <input type="text" id="fullname" name="fullname"
+                                                            placeholder="Full Name *" required minlength="3">
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+
+                                                <div class="col-lg-6 col-md-6">
                                                     <div class="form-clt">
-                                                        <input type="text" placeholder="Email address *">
+                                                        <input type="email" id="email" name="email"
+                                                            placeholder="Email Address *" required>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-12 col-md-12 wow fadeInUp" data-wow-delay=".3s">
+
+                                                <div class="col-lg-12 col-md-12">
                                                     <div class="form-clt">
-                                                        <input type="text" placeholder="Phone number *">
+                                                        <input type="tel" id="phone" name="phone"
+                                                            placeholder="Phone Number *" pattern="[0-9+\-\s]{8,15}"
+                                                            required>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-12 wow fadeInUp" data-wow-delay=".3s">
+
+                                                <div class="col-lg-12">
                                                     <div class="form-clt">
-                                                        <textarea name="message"
-                                                            placeholder="Type your message"></textarea>
+                                                        <textarea id="message" name="message"
+                                                            placeholder="Type your message" rows="5" required
+                                                            minlength="10"></textarea>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-12 wow fadeInUp" data-wow-delay=".5s">
+
+                                                <div class="col-lg-12">
                                                     <div class="btn-sec display-flex-row">
-                                                        <a class="gt-theme-btn-main" href="#"
-                                                            style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
-                                                            <span class="gt-theme-btn-arrow-left"> <i
-                                                                    class="fa-solid fa-arrow-up-right"></i> </span>
+                                                        <button type="submit" class="gt-theme-btn-main">
+                                                            <span class="gt-theme-btn-arrow-left">
+                                                                <i class="fa-solid fa-arrow-up-right"></i>
+                                                            </span>
                                                             <span class="gt-theme-btn">Get Free Academic Guidance</span>
-                                                            <span class="gt-theme-btn-arrow-right"> <i
-                                                                    class="fa-solid fa-arrow-up-right"></i> </span>
-                                                        </a>
+                                                            <span class="gt-theme-btn-arrow-right">
+                                                                <i class="fa-solid fa-arrow-up-right"></i>
+                                                            </span>
+                                                        </button>
                                                     </div>
                                                 </div>
+
                                             </div>
-                                            <div class="row quick-action-btn-main-container wow fadeInUp">
-                                                <div class="section-title text-left no-margin">
-                                                    <h6 class="sub-title">
-                                                        <h3 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                                                            Need Immediate Assistance?
-                                                        </h3>
-                                                    </h6>
-                                                </div>
-                                                <div class="quick-action-btn-container">
-                                                    <a class="gt-theme-btn-main style-2" data-wow-delay=".5s"
-                                                        href="tel:+971556410900">
-                                                        <span class="gt-theme-btn-arrow-left"> <i
-                                                                class="fa-solid fa-phone"></i>
-                                                        </span>
-                                                        <span class="gt-theme-btn">Schedule Your Call</span>
-                                                        <span class="gt-theme-btn-arrow-right"> <i
-                                                                class="fa-solid fa-phone"></i> </span>
-                                                    </a>
-                                                    <a class="gt-theme-btn-main style-2" data-wow-delay=".5s"
-                                                        href="mailto:info@eduwing.ae">
-                                                        <span class="gt-theme-btn-arrow-left"> <i
-                                                                class="fa-solid fa-envelope"></i>
-                                                        </span>
-                                                        <span class="gt-theme-btn">Send Email</span>
-                                                        <span class="gt-theme-btn-arrow-right"> <i
-                                                                class="fa-solid fa-envelope"></i> </span>
-                                                    </a>
-                                                </div>
-                                            </div>
+
                                         </form>
                                     </div>
 
@@ -861,7 +905,7 @@
                                                         Diploma Courses
                                                     </a>
                                                 </li>
-                                                
+
                                                 <li>
                                                     <a href="programmes.html?category=bachelor">
                                                         UG Courses
@@ -881,7 +925,7 @@
                                         </div>
                                     </div>
                                     <div class="col-xl-2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                                       <div class="footer-widget-items footer-menu">
+                                        <div class="footer-widget-items footer-menu">
                                             <div class="widget-head">
                                                 <h3>Phone</h3>
                                             </div>

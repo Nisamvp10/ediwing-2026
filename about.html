@@ -34,6 +34,7 @@
     <!--<< RTL.css >>-->
     <link rel="stylesheet" href="assets/css/rtl.css">
     <link rel="stylesheet" href="assets/css/custom-main.css">
+    <link href="assets/css/gligthbox.min.css" rel="stylesheet">
     <style>
         .swiper-dot .swiper-pagination-bullet {
             width: 10px;
@@ -290,9 +291,7 @@
                                                 </h2>
                                             </div>
                                         </div>
-
                                     </div>
-
                                     <div class="about-main-container">
                                         <p>Established in 2011, Eduwing Education is the visionary creation of
                                             entrepreneurs Mr. Sonu Raj and Mr.Marshall. Their mission was to deliver
@@ -533,7 +532,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="feature-wrapper team-container">
                             <div class="swiper feature-box-slider">
                                 <div class="swiper-wrapper">
@@ -548,7 +546,6 @@
                                                     <a href="#">Sonu S Raj</a>
                                                 </h3>
                                                 <p>Founder & Chairman</p>
-
                                             </div>
                                         </div>
                                     </div>
@@ -732,11 +729,15 @@
                                 <div class="about-info">
                                     <div class="client-image">
                                         <img src="assets/img/about-img/about-client.png" alt="img">
-                                        <a href="https://www.youtube.com/watch?v=VIDEO_ID"
+                                        <!-- <a href="https://www.youtube.com/watch?v=VIDEO_ID"
                                             class="video-btn video-popup">
                                             <i class="fa-duotone fa-play"></i>
+                                        </a> -->
+                                        <a href="https://www.youtube.com/embed/D-IOSwy_UzQ" class="video-btn glightbox">
+                                            <i class="fa-duotone fa-play"></i>
                                         </a>
-                                        <span>Watch now!</span>
+                                        <!-- <span class="play-btn">▶</span> -->
+                                          <span>Watch now!</span>
                                     </div>
                                 </div>
                             </div>
@@ -940,7 +941,7 @@
                                                         Diploma Courses
                                                     </a>
                                                 </li>
-                                                
+
                                                 <li>
                                                     <a href="programmes.html?category=bachelor">
                                                         UG Courses
@@ -1149,8 +1150,49 @@
         `
             });
         });
+    </script>
+
+    <script src="assets/js/glightbox.min.js"></script>
 
 
+
+    <script>
+        // Initialize WOW
+        new WOW().init();
+
+        // Initialize Lightbox
+        GLightbox({
+            selector: '.glightbox',
+            loop: true,
+            zoomable: true
+        });
+    </script>
+
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.tab-content');
+        const indicator = document.querySelector('.tab-indicator');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                tab.classList.add('active');
+                document.getElementById(tab.dataset.tab).classList.add('active');
+
+                indicator.style.width = tab.offsetWidth + 'px';
+                indicator.style.left = tab.offsetLeft + 'px';
+            });
+        });
+
+        // Initial indicator position
+        indicator.style.width = tabs[0].offsetWidth + 'px';
+        indicator.style.left = tabs[0].offsetLeft + 'px';
+
+        // Lightbox init
+        GLightbox({ selector: '.glightbox' });
     </script>
 </body>
 
