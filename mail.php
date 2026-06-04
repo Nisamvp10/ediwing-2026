@@ -31,7 +31,8 @@ if(isset($_POST['send'])) {
     if(count($errors) > 0) {
         echo json_encode(['status' => 'error', 'validate' => $errors]);
     } else {
-        $to      = 'londoncollege5005@gmail.com';
+         $to      = 'info@eduwing.ae';
+        //$to      = 'nisamvp10@gmail.com';
         $subject = 'Enquiry form';
        $message = 'Message: ' . $message;
 
@@ -61,16 +62,18 @@ if(isset($_POST['send'])) {
         </tbody>
         </table>';
         
+   //$config['smtp_user'] = "vinsafesolution@gmail.com";
+    //$config['smtp_pass'] = "fggjklolygaahlwj"; //fggj klol ygaa hlwj
 
         $mail->isHTML(true);
         $mail->SMTPAuth = true;
         $mail->Host = 'smtp.gmail.com';
-        $mail->Username = 'londoncollege5005@gmail.com';
-        $mail->Password = 'bvnczuehveijbvws';
+        $mail->Username = 'vinsafesolution@gmail.com';
+        $mail->Password = 'fggjklolygaahlwj';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
         $mail->From = $email;
-        $mail->FromName = $name;
+        $mail->FromName = 'Eduwing web';
         $mail->addAddress($to);
         $mail->Subject = $subject;
         $mail->Body = $html;

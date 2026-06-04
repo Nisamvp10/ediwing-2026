@@ -35,6 +35,7 @@
     <link rel="stylesheet" href="assets/css/rtl.css">
     <link rel="stylesheet" href="assets/css/custom-main.css">
     <!-- GLightbox CSS -->
+    <link href="assets/css/toastar.css" rel="stylesheet">
     <link href="assets/css/gligthbox.min.css" rel="stylesheet">
 </head>
 
@@ -754,44 +755,48 @@
                                                 </h2>
                                             </h6>
                                         </div>
-                                        <form action="contact.php" method="post" id="contact-form"
-                                            class="contact-form-box">
+                                        <!-- id="contact-form" -->
+                                        <form action="" method="post" id="conactForm" class="contact-form-box">
 
                                             <div class="row g-4 align-items-center">
 
                                                 <div class="col-lg-6 col-md-6">
-                                                    <div class="form-clt">
-                                                        <input type="text" id="fullname" name="fullname"
-                                                            placeholder="Full Name *" required minlength="3">
+                                                    <div class="form-clt form-group">
+                                                        <input type="text" id="name" name="name" class="form-control"
+                                                            placeholder="Full Name *" minlength="3">
+                                                        <div class="invalid-feedback" id="name_error"></div>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-6 col-md-6">
                                                     <div class="form-clt">
                                                         <input type="email" id="email" name="email"
-                                                            placeholder="Email Address *" required>
+                                                            placeholder="Email Address *">
+                                                        <div class="invalid-feedback" id="email_error"></div>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-12 col-md-12">
                                                     <div class="form-clt">
-                                                        <input type="tel" id="phone" name="phone"
-                                                            placeholder="Phone Number *" pattern="[0-9+\-\s]{8,15}"
-                                                            required>
+                                                        <input type="tel" id="phone_number" name="phone_number"
+                                                            placeholder="Phone Number *" pattern="[0-9+\-\s]{8,15}">
+                                                        <div class="invalid-feedback" id="phone_number_error"></div>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-12">
                                                     <div class="form-clt">
                                                         <textarea id="message" name="message"
-                                                            placeholder="Type your message" rows="5" required
+                                                            placeholder="Type your message" rows="5"
                                                             minlength="10"></textarea>
+                                                        <div class="invalid-feedback" id="message_error"></div>
                                                     </div>
                                                 </div>
 
                                                 <div class="col-lg-12">
                                                     <div class="btn-sec display-flex-row">
-                                                        <button type="submit" class="gt-theme-btn-main">
+                                                        <button type="submit" class="gt-theme-btn-main " id="submitBtn"
+                                                            name="send">
                                                             <span class="gt-theme-btn-arrow-left">
                                                                 <i class="fa-solid fa-arrow-up-right"></i>
                                                             </span>
@@ -1053,12 +1058,15 @@
     <!--<< Wow Animation Js >>-->
     <script src="assets/js/wow.min.js"></script>
     <!--<< Ajax Mail Js >>-->
-    <script src="assets/js/ajax-mail.js"></script>
+    <!-- <script src="assets/js/ajax-mail.js"></script> -->
+    <script src="assets/js/mail.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/custom.js"></script>
     <!--<< Main.js >>-->
+    <script src="assets/js/toastr.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
+
 </body>
 
 </html>
