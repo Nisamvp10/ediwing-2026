@@ -6367,3 +6367,15 @@ only screen and (min-width: 576px) and (max-width: 767px),
   }
 
 }
+
+@media (max-width: 377px) {
+  .logo img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 333px) {
+  .logo img {
+    width: 110px;
+  }
+}
