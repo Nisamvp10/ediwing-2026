@@ -279,6 +279,49 @@
     });
    }
 
+
+
+    /* ================================
+      Feature Box Slider Js Start
+    ================================ */
+   if ($('.feature-box-slider-2').length > 0) {
+    const featureBoxSlider = new Swiper(".feature-box-slider-2", {
+        spaceBetween: 30,
+        speed: 1300,
+        loop: true,
+        autoplay: {
+            delay: 2000,
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".array-next",
+            prevEl: ".array-prev",
+        },
+        pagination: {
+            el: ".dot",
+            clickable: true,
+        },
+        breakpoints: {
+            1199: {
+                slidesPerView: 4,
+            },
+            991: {
+                slidesPerView: 4,
+            },
+            767: {
+                slidesPerView: 2,
+            },
+            575: {
+                slidesPerView: 1.5,
+            },
+            0: {
+                slidesPerView: 1.2,
+            },
+        },
+    });
+   }
+
+
    /* ================================
       Feature Box Slider Js Start
     ================================ */
