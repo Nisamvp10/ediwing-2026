@@ -179,19 +179,19 @@ h2 {
 
 @media (max-width: 767px) {
   h2 {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
 @media (max-width: 575px) {
   h2 {
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 
 @media (max-width: 470px) {
   h2 {
-    font-size: 16px;
+    font-size: 22px;
   }
 }
 
