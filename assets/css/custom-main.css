@@ -30,6 +30,10 @@ li.active a {
   color: var(--red);
 }
 
+.header-main {
+  padding: 0px !important;
+}
+
 .home-abt-img-sec {
   border-radius: 20px;
   overflow: hidden;
@@ -108,6 +112,58 @@ li.active a {
 .logo img {
   width: auto;
 }
+
+.student-login-header {
+  max-width: 1800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-login-header .header-btn:hover {
+  background-color: transparent !important;
+  border: none;
+  color: var(--red);
+}
+
+
+
+.student-login-header .header-btn span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.student-login-header .header-btn span iconify-icon {
+  font-size: 18px;
+}
+
+.sticky.header-1 {
+  background-color: var(--header);
+  padding: 12px 0 !important;
+}
+
+.student-login-header .contact-info h3 {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+}
+
+.student-login-header ul {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.student-login-header li {}
+
+.student-login-header li a {
+  border: none;
+  padding: 0px;
+  /* background-color: var(--red);
+  border: var(--red); */
+}
+
 
 .gt-theme-btn-main .gt-theme-btn-arrow-left {
   scale: 0;
@@ -2669,6 +2725,10 @@ li.active a {
   height: 30px;
 }
 
+.social-media-blog ul li {
+  color: #333 !important;
+}
+
 .social-media ul li:nth-child(1) {
   margin: 0;
 }
@@ -2929,6 +2989,10 @@ li.active a {
 .header-btn img {
   width: 24px;
 }
+
+/* .header-1 {
+  padding-top: 5px !important;
+} */
 
 .header-1 .mean__menu-wrapper {
   border-radius: 70px;
@@ -5375,13 +5439,13 @@ input[id=radio-5]:checked~.glider {
 .footer-widget-wrapper .footer-widget-items .contact-list li:nth-last-child(1) {
   border: none;
   margin-left: 0px;
-   /* padding-left: 0px; */
+  /* padding-left: 0px; */
 }
 
 .footer-widget-wrapper .footer-widget-items .contact-list li:nth-child(3) {
   /* padding-left: 0px; */
   margin-left: 0px;
-   border: none;
+  border: none;
 }
 
 .header-1 .mean__menu-wrapper .main-menu ul li .submenu li a {
@@ -6681,10 +6745,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .iti__selected-country {
-    height: auto !important;
+  height: auto !important;
 }
 
 .team-box-item-3.style-2 .content h3 {
-    font-weight: 600;
-    font-size: 20px !important;
+  font-weight: 600;
+  font-size: 20px !important;
 }

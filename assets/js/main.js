@@ -373,7 +373,7 @@
    if ($('.project-slider').length > 0) {
     const projectSlider = new Swiper(".project-slider", {
         spaceBetween: 30,
-        speed: 1300,
+        speed: 500,
         loop: true,
         centeredSlides: true,
         navigation: {
