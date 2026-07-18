@@ -2708,6 +2708,23 @@ li.active a {
   color: #fff !important;
 }
 
+
+@media (max-width: 719px) {
+  .footer-bottom-wrapper> :first-child {
+    order: 1;
+  }
+}
+
+@media (max-width: 434px) {
+  .footer-bottom-wrapper {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+
+
+
+
 .social-media {
   display: inline-flex;
 }
@@ -3208,8 +3225,8 @@ li.active a {
 }
 
 .footer-bottom-wrapper {
-  padding-left: 60px !important;
-  padding-right: 60px !important;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 /* ===============About Page ======================== */
