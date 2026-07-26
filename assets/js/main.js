@@ -206,7 +206,7 @@
    if ($('.brand-slider').length > 0) {
     const brandSlider = new Swiper(".brand-slider", {
         spaceBetween: 30,
-        speed: 1300,
+        speed: 500,
         loop: true,
         autoplay: {
             delay: 2000,
@@ -245,7 +245,7 @@
    if ($('.feature-box-slider').length > 0) {
     const featureBoxSlider = new Swiper(".feature-box-slider", {
         spaceBetween: 30,
-        speed: 1300,
+        speed: 500,
         loop: true,
         autoplay: {
             delay: 2000,
@@ -287,7 +287,7 @@
    if ($('.feature-box-slider-2').length > 0) {
     const featureBoxSlider = new Swiper(".feature-box-slider-2", {
         spaceBetween: 30,
-        speed: 1300,
+        speed: 500,
         loop: true,
         autoplay: {
             delay: 2000,
@@ -328,7 +328,7 @@
    if ($('.service-slider-3').length > 0) {
     const serviceSlider3 = new Swiper(".service-slider-3", {
         spaceBetween: 30,
-        speed: 1300,
+        speed: 500,
         loop: true,
          centeredSlides: true,
         autoplay: {
@@ -421,7 +421,7 @@
 			spaceBetween: 30,
 			navigation: true,
 			centeredSlides: true,
-            speed: 1300,
+            speed: 500,
 			loop: true,
 			loopedSlides: 6,
 			navigation: {
@@ -438,7 +438,7 @@
 			spaceBetween: 0,
 			centeredSlides: true,
 			loop: true,
-            speed: 1300,
+            speed: 500,
 			slideToClickedSlide: true,
 		});
 		slider.controller.control = thumbs;
@@ -448,7 +448,7 @@
     if ($('.testimonial-slider-2').length > 0) {
     const testimonialSlider2 = new Swiper(".testimonial-slider-2", {
         spaceBetween: 30,
-        speed: 1300,
+        speed: 500,
         loop: true,
         centeredSlides: true,
         autoplay: {
@@ -486,7 +486,7 @@
     if ($('.testimonial-slider-3').length > 0) {
     const testimonialSlider3 = new Swiper(".testimonial-slider-3", {
         spaceBetween: 30,
-        speed: 1300,
+        speed: 500,
         loop: true,
          centeredSlides: true,
         autoplay: {
@@ -527,7 +527,7 @@
     if ($('.testimonial-slider-4').length > 0) {
     const testimonialSlider4 = new Swiper(".testimonial-slider-4", {
         spaceBetween: 30,
-        speed: 1300,
+        speed: 500,
         loop: true,
         autoplay: {
             delay: 2000,
@@ -567,7 +567,7 @@
     if ($('.testimonial-slider-5').length > 0) {
     const testimonialSlider5 = new Swiper(".testimonial-slider-5", {
         spaceBetween: 30,
-        speed: 1300,
+        speed: 500,
         loop: true,
         autoplay: {
             delay: 2000,
