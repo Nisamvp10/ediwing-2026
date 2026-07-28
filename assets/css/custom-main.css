@@ -5525,6 +5525,23 @@ input[id=radio-5]:checked~.glider {
   background-color: var(--black);
 }
 
+.login-dropdown-main-container button {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  padding: 13px 18px;
+  border-radius: 40px;
+}
+
+.login-dropdown-main-container button:hover {
+  background-color: var(--black);
+  border: 1px solid var(--red);
+}
+
+.login-dropdown-main-container button:active {
+  background-color: var(--black);
+  border: 1px solid var(--red);
+}
+
 .dropdown-item.active,
 .dropdown-item:active {
   color: var(--white);
