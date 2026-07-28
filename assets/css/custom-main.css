@@ -8,7 +8,7 @@ iconify-icon {
   color: var(--header);
 }
 
-li.active {
+.main-menu li.active {
   padding-right: 25px !important;
   padding-left: 25px !important;
   background-color: var(--red);
@@ -3398,9 +3398,6 @@ li.active {
   position: relative;
 }
 
-.filter-menu li.active {
-  color: var(--red);
-}
 
 .filter-menu li.active::after {
   content: "";
