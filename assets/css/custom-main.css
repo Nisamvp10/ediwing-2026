@@ -5236,6 +5236,7 @@ input[id=radio-5]:checked~.glider {
 
 .footer-widget-wrapper .footer-widget-items .contact-list-address li span {
   display: inline-flex;
+  align-items: baseline;
 }
 
 .contact-list-address {
@@ -5249,6 +5250,9 @@ input[id=radio-5]:checked~.glider {
 .footer-widget-wrapper .footer-widget-items .contact-list-address li span .icon {
   margin-top: 3px;
   padding-right: 5px;
+  /* display: flex; */
+  position: relative;
+  top: 3px;
 }
 
 .contact-list-address li:nth-child(2) {
@@ -6580,11 +6584,11 @@ only screen and (min-width: 576px) and (max-width: 767px),
   font-size: 20px !important;
 }
 
-@media (max-width: 1269px){
+@media (max-width: 1269px) {
 
   .header-main .main-menu ul li {
     padding-right: 17px !important;
     padding-left: 17px !important;
-}
+  }
 
 }
