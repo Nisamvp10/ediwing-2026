@@ -100,6 +100,10 @@ iconify-icon {
     width: 48px;
     height: 48px;
   }
+
+  .login-dropdown-main-container button {
+    padding: 8px 14px !important;
+  }
 }
 
 .header-main .header-right {
@@ -6591,4 +6595,10 @@ only screen and (min-width: 576px) and (max-width: 767px),
     padding-left: 17px !important;
   }
 
+}
+
+@media (max-width: 500px) {
+  .header-main {
+    padding: 0px 10px !important;
+  }
 }
