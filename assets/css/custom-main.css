@@ -556,11 +556,15 @@ iconify-icon {
   position: relative;
   z-index: 9;
   /* border: 1px solid #EEEEEE; */
-  height: -webkit-fill-available;
+  height: 100%;
 }
 .strength-card-item-bg {
   background-color: #f2f5f7 !important;
 }
+.strength-box{
+  margin-bottom: 20px;
+}
+
 .strength-box:nth-child(1) .strength-card-item {
   background-color: #fff9f4;
   /* border: 1px solid #ffddbf; */
@@ -2118,13 +2122,13 @@ iconify-icon {
   padding: 13px 0 13px 0;
 }
 .banner-strength-card-item {
-  background-color: var(--white);
-  padding: 16px 16px;
+  background: var(--white);
+  padding: 16px;
   border-radius: 25px;
   position: relative;
   z-index: 9;
-  height: -webkit-fill-available;
-  transition: background 0.4s ease;
+  height: 100%;
+  transition: background-color 0.4s ease;
 }
 .banner-strength-card-item:hover {
   background: linear-gradient(0deg,
